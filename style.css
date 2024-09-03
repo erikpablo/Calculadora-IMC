@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .hide {
+    display: none;
+  }
+  
+  :root {
+    font-size: 62.5%;
+  }
+  
+  html, body {
+    font-family: 'open sans', sans-serif;
+  }
+  
+  input, button {
+    font-family: 'Oswald', sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(100deg, black, red);
+    height: 100vh;
+    display: grid;
+    place-items: center;
+  }
+  
+  .calculation {
+    background: #FFFFFF;
+    box-shadow: 0 .2rem .4rem rgba(0, 0, 0, 0.1);
+    border-radius: .6rem;
+    padding: 4.8rem 6.4rem 6.4rem;
+    width: min(42.8rem, 90%);
+  
+    text-align: center;
+  } 
+  
+  .erro {
+    background: red;
+    color: white;
+  
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: .7rem;
+    text-align: center;
+
+    opacity: 0;
+    transform: translateY(-100%);
+    animation: slideDown 1s ease forwards;
+  }
+
+  @keyframes slideDown {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+}}
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  
+  input {
+    border: 1px solid #1f5eaf;
+    border-radius: .3rem;
+    padding: 1rem;
+  }
+  
+  button {
+    padding: .5rem;
+    border: none;
+    border-radius: .3rem;
+    background: linear-gradient(140deg, red, black);
+  
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 2rem;
+    box-shadow: 0 .2rem .4rem #453a3a;
+  
+    transition: background 1s ease, box-shadow 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background: linear-gradient(140deg, rgb(117, 1, 1), rgb(110, 110, 110));
+    box-shadow: 0 .5rem 1rem #453a3a;
+    transform: translateY(-2px);
+  }
+  
+  button:active {
+    box-shadow: 0 .2rem .4rem #453a3a;
+    transform: translateY(2px);
+  }
+  
+  
+  span {
+    background: linear-gradient(140deg, red, black);
+    color: #fff;
+    font-size: 2.2rem;
+    font-weight: bold;
+    padding: .5rem;
+    border-radius: .3rem;
+    box-shadow: 0 .2rem .4rem rgb(69, 58, 58);
+  
+    transition: background .5s;
+  }
+  
+  span:hover {
+    background: linear-gradient(140deg, rgb(124, 0, 0), rgb(102, 102, 102));
+    transform: scale(1.2); 
+  }
